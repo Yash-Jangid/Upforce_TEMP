@@ -4,9 +4,11 @@ const userController = require('../controllers/userController');
 
 router.post('/', userController.createUser);
 router.get('/', userController.getUsers);
+router.get('/:id', userController.getUser);
 router.put('/:id', userController.updateUser);
 router.delete('/:id', userController.deleteUser);
-router.get('/search', userController.searchUsers);
-router.get('/export', userController.exportToCSV);
+router.get('/search/query', userController.searchUsers);
+router.get('/exports/csvfile', userController.exportToCSV);
+router.post('/upload/assets', userController.assetsUpload);
 
 module.exports = router;
