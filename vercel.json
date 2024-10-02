@@ -1,7 +1,7 @@
 {
     "version": 1.00,
     "name": "My App",
-    "build": [
+    "builds": [
         {
             "src": "./server.js",
             "use": "@vercel/node"
